@@ -27,7 +27,7 @@
 <!-- Username = Password    -->
 <?php if ($usermode == "vc") { ?>
         <tr>
-          <td font-size: 12px;>Kode Voucher</td>
+          <td font-size: 12px;>Username and Password</td>
         </tr>
         <tr>
           <td style="width:100%; border: 1px solid black; font-weight:bold; font-size:16px;"><?= $username; ?></td>
@@ -60,7 +60,7 @@
 <!-- /  -->
     <tr>
       <!-- Price  -->
-      <td colspan="2" style="border-top: 1px solid black;font-weight:bold; font-size:16px"><?= $validity; ?> <?= $timelimit; ?> <?= $datalimit; ?> <?= $price; ?></td>
+      <td colspan="2" style="border-top: 1px solid black;font-weight:bold; font-size:16px">Exp:<?= $validity; ?> Time:<?= $timelimit; ?> <?= $datalimit; ?> Price:<?= $price; ?></td>
 <!-- /  -->
     </tr>
     <tr>

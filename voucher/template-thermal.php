@@ -9,10 +9,10 @@
   <tbody>
 <!-- Logo Hotspotname -->
     <tr>
-      <td style="text-align: center; font-size: 14px; font-weight:bold;"><?= $hotspotname; ?></td>
+      <td style="text-align: center; font-size: 14px; font-weight:bold;"><img src="<?= $logo; ?>" alt="logo" style="height:44px;border:0;"></td>
     </tr>
     <tr>
-      <td style="text-align: center; font-size: 14px; font-weight:bold; border-bottom: 1px black solid;"><img src="<?= $logo; ?>" alt="logo" style="height:30px;border:0;"><br><?= date("Y-m-d h:i:sa") ?></td>
+      <td style="text-align: center; font-size: 14px; font-weight:bold; border-bottom: 1px black solid;"><?= $hotspotname; ?><br><?= date("Y-m-d h:i:sa") ?></td>
     </tr>
 <!-- /  -->
     <tr>
@@ -26,7 +26,7 @@
 <!-- Username = Password    -->
 <?php if ($usermode == "vc") { ?>
         <tr>
-          <td font-size: 12px;>Kode Voucher</td>
+          <td font-size: 12px;>Username and Password</td>
         </tr>
         <tr>
           <td style="width:100%; border: 1px solid black; font-weight:bold; font-size:16px;"><?= $username; ?></td>
@@ -59,7 +59,7 @@
 <!-- /  -->
     <tr>
       <!-- Price  -->
-      <td colspan="2" style="border-top: 1px solid black;font-weight:bold; font-size:16px"><?= $validity; ?> <?= $timelimit; ?> <?= $datalimit; ?> <?= $price; ?></td>
+      <td colspan="2" style="border-top: 1px solid black;font-weight:bold; font-size:16px">Exp:<?= $validity; ?> Limit:<?= $timelimit; ?><?= $datalimit; ?> Price:<?= $price; ?></td>
 <!-- /  -->
     </tr>
     <tr>

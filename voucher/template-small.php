@@ -1,4 +1,4 @@
-	            	             	            	              	            	              	            	              	            	              
+													            	             	            	              	            	              	            	              	            	              
 <table class="voucher" style=" width: 160px;">
   <tbody>
     <tr>
@@ -14,13 +14,13 @@
 <!-- Username = Password    -->
 <?php if($usermode == "vc"){?>
         <tr>
-          <td >Kode Voucher</td>
+          <td >Username and Password</td>
         </tr>
         <tr style="color: black; font-size: 14px;">
           <td style="width:100%; border: 1px solid black; font-weight:bold;"><?php echo $username;?></td>
         </tr>
         <tr>
-          <td colspan="2" style="border: 1px solid black; font-weight:bold;"><?php echo $validity;?> <?php echo $timelimit;?> <?php echo $datalimit;?> <?php echo $price;?></td>
+          <td colspan="2" style="border: 1px solid black; font-weight:bold;">Exp:<?php echo $validity;?> Limit:<?php echo $timelimit;?> <?php echo $datalimit;?> Price:<?php echo $price;?></td>
         </tr>
 <!-- /  -->
 <!-- Username & Password  -->
@@ -34,7 +34,7 @@
           <td style="border: 1px solid black; font-weight:bold;"><?php echo $password;?></td>
         </tr>
         <tr>
-          <td colspan="2" style="border: 1px solid black; font-weight:bold;"><?php echo $validity;?> <?php echo $timelimit;?> <?php echo $datalimit;?> <?php echo $price;?></td>
+          <td colspan="2" style="border: 1px solid black; font-weight:bold;">Exp:<?php echo $validity;?> Limit:<?php echo $timelimit;?> <?php echo $datalimit;?> Price:<?php echo $price;?></td>
         </tr>
 <?php }?>
 <!-- /  -->
@@ -46,4 +46,4 @@
       </td>
     </tr>
   </tbody>
-</table>	            	          	           	          	           	          
+</table>	            	          	           	          	           	          	        	        
