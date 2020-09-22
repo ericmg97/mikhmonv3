@@ -80,15 +80,15 @@ if (!isset($_SESSION["mikhmon"])) {
   
     if($getsprice == "0" && $getprice != "0"){
       if ($currency == in_array($currency, $cekindo['indo'])) {
-        $price = $currency . " " . number_format($getprice, 0, ",", ".");
+        $price = number_format($getprice, 0, ",", ".").$currency;
       } else {
-        $price = $currency . " " . number_format($getprice, 2);
+        $price = number_format($getprice, 2).$currency;
       }
     }else if($getsprice != "0"){
       if ($currency == in_array($currency, $cekindo['indo'])) {
-        $price = $currency . " " . number_format($getsprice, 0, ",", ".");
+        $price = number_format($getsprice, 0, ",", ".").$currency;
       } else {
-        $price = $currency . " " . number_format($getsprice, 2);
+        $price = number_format($getsprice, 2).$currency;
       }
     }else if ($getsprice == "0") {
       $price = "";

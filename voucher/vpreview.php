@@ -60,10 +60,10 @@ if (!isset($_SESSION["mikhmon"])) {
   
 if ($currency == in_array($currency, $cekindo['indo'])) {
     $getprice = "5000";
-    $price = $currency . " " . number_format($getprice, 0, ",", ".");
+    $price = number_format($getprice, 0, ",", ".") . $currency;
 } else {
     $getprice = "10";
-    $price = $currency . " " . number_format($getprice, 2);
+    $price = number_format($getprice, 2) . $currency;
 }
   
   
