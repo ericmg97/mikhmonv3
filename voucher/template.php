@@ -1,4 +1,4 @@
-						
+																								
 <style>
 	.qrcode{
 		height:80px;
@@ -70,10 +70,21 @@
       </td>
 <?php 
 } ?>
+		
 <!-- /  -->
-    <tr>
-      <!-- Price  -->
-      <td colspan="2" style="border-top: 1px solid black;font-weight:bold; font-size:16px">Exp:<?= $validity; ?> Limit:<?= $timelimit; ?> <?= $datalimit; ?> Price: <?= $price; ?></td>
+<?php if($timelimit == 0){?>
+           <tr>
+			   <td colspan="2" style="border-top: 1px solid black;font-weight:bold; font-size:16px">Exp:<?= $validity; ?> Price: <?= $price; ?></td>
+			
+<?php }else{?>
+		  <tr>
+			   <td colspan="2" style="border-top: 1px solid black;font-weight:bold; font-size:16px">Exp:<?= $validity; ?> Limit:<?= $timelimit; ?> Price: <?= $price; ?></td>
+		  	
+<?php 
+}?>		
+		
+		
+
 <!-- /  -->
     </tr>
     <tr>
@@ -88,4 +99,4 @@
     </tr>
   </tbody>
 </table>
-	        
+	        	        	        	        
