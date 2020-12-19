@@ -132,7 +132,6 @@ if (!isset($_SESSION["mikhmon"])) {
       $lock = "";
     }
 
-    $randstarttime = "0".rand(1,5).":".rand(10,59).":".rand(10,59);
     $randinterval = "00:02:".rand(10,59);
 
     $parent = ($_POST['parent']);
@@ -178,7 +177,6 @@ if (!isset($_SESSION["mikhmon"])) {
     if (empty($monid)){
       $API->comm("/system/scheduler/add", array(
         "name" => "$name",
-        "start-time" => "$randstarttime",
         "interval" => "$randinterval",
         "on-event" => "$bgservice",
         "disabled" => "no",
@@ -188,7 +186,6 @@ if (!isset($_SESSION["mikhmon"])) {
     $API->comm("/system/scheduler/set", array(
       ".id" => "$monid",
       "name" => "$name",
-      "start-time" => "$randstarttime",
       "interval" => "$randinterval",
       "on-event" => "$bgservice",
       "disabled" => "no",
